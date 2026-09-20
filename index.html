@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Gesture Canvas</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="camera-container">
+
+    <!-- CAMERA -->
+
+    <video
+        id="video"
+        autoplay
+        playsinline
+    ></video>
+
+
+    <!-- DRAWING CANVAS -->
+
+    <canvas id="drawCanvas"></canvas>
+
+
+    <!-- HAND POINTER -->
+
+    <canvas id="handCanvas"></canvas>
+
+
+    <!-- ================================= -->
+    <!-- TITLE -->
+    <!-- ================================= -->
+
+    <div class="top-title">
+
+        ✋ Gesture Canvas
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- LEFT CONTROL PANEL -->
+    <!-- ================================= -->
+
+    <div class="control-panel">
+
+
+        <div class="panel-title">
+            CONTROLS
+        </div>
+
+
+        <!-- CLEAR -->
+
+        <button
+            class="gesture-btn"
+            id="clearBtn"
+            data-name="Clear"
+        >
+
+            🗑 Clear
+
+        </button>
+
+
+        <!-- UNDO -->
+
+        <button
+            class="gesture-btn"
+            id="undoBtn"
+            data-name="Undo"
+        >
+
+            ↩ Undo
+
+        </button>
+
+
+        <!-- ERASE -->
+
+        <button
+            class="gesture-btn"
+            id="eraseBtn"
+            data-name="Erase"
+        >
+
+            🧽 Erase
+
+        </button>
+
+
+        <!-- SAVE -->
+
+        <button
+            class="gesture-btn"
+            id="saveBtn"
+            data-name="Save"
+        >
+
+            💾 Save
+
+        </button>
+
+
+        <!-- ================================= -->
+        <!-- COLORS -->
+        <!-- ================================= -->
+
+        <div class="color-title">
+
+            COLORS
+
+        </div>
+
+
+        <div class="colors">
+
+
+            <button
+                class="color-btn"
+                data-color="#000000"
+                data-name="Black"
+                style="background:#000000;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#333333"
+                data-name="Dark Gray"
+                style="background:#333333;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#777777"
+                data-name="Gray"
+                style="background:#777777;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#bbbbbb"
+                data-name="Light Gray"
+                style="background:#bbbbbb;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#ffffff"
+                data-name="White"
+                style="background:#ffffff;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#8b0000"
+                data-name="Dark Red"
+                style="background:#8b0000;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#ff0000"
+                data-name="Red"
+                style="background:#ff0000;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#ff6b6b"
+                data-name="Light Red"
+                style="background:#ff6b6b;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#cc5500"
+                data-name="Dark Orange"
+                style="background:#cc5500;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#ff8800"
+                data-name="Orange"
+                style="background:#ff8800;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#ffff00"
+                data-name="Yellow"
+                style="background:#ffff00;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#ffd700"
+                data-name="Gold"
+                style="background:#ffd700;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#006400"
+                data-name="Dark Green"
+                style="background:#006400;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#00cc44"
+                data-name="Green"
+                style="background:#00cc44;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#7cff6b"
+                data-name="Light Green"
+                style="background:#7cff6b;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#00ffff"
+                data-name="Cyan"
+                style="background:#00ffff;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#0088ff"
+                data-name="Blue"
+                style="background:#0088ff;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#00008b"
+                data-name="Dark Blue"
+                style="background:#00008b;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#7c3aed"
+                data-name="Purple"
+                style="background:#7c3aed;"
+            ></button>
+
+
+            <button
+                class="color-btn"
+                data-color="#ff1493"
+                data-name="Pink"
+                style="background:#ff1493;"
+            ></button>
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- SELECTED STATUS -->
+        <!-- ================================= -->
+
+        <div class="selected-box">
+
+            <span>
+                Selected:
+            </span>
+
+            <strong id="selectedStatus">
+                None
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- CAMERA STATUS -->
+    <!-- ================================= -->
+
+    <div class="status">
+
+        <span id="cameraStatus">
+            Camera Offline
+        </span>
+
+        <span id="handStatus">
+            Show your hand
+        </span>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- CAMERA BUTTONS -->
+    <!-- ================================= -->
+
+    <div class="camera-controls">
+
+        <button
+            id="cameraBtn"
+            class="start-btn"
+        >
+            Start Camera
+        </button>
+
+
+        <button
+            id="stopBtn"
+            class="stop-btn"
+            disabled
+        >
+            Stop Camera
+        </button>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- SAVE MODAL -->
+    <!-- ================================= -->
+
+    <div
+        class="save-modal"
+        id="saveModal"
+    >
+
+        <div class="save-box">
+
+            <h2>
+                Save Drawing?
+            </h2>
+
+
+            <div class="preview-container">
+
+                <img
+                    id="drawingPreview"
+                    alt="Drawing Preview"
+                >
+
+            </div>
+
+
+            <p>
+                Do you want to save this drawing?
+            </p>
+
+
+            <div class="save-actions">
+
+                <button id="yesSave">
+                    YES
+                </button>
+
+                <button id="noSave">
+                    NO
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================================= -->
+<!-- MEDIAPIPE -->
+<!-- ================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
