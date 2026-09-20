@@ -1,16 +1,16 @@
+
+<p align="center">
+  <img src="assets/banner.png" alt="Gesture-Canvas Banner">
+</p>
+
+<h1 align="center">Gesture-Canvas</h1>
+
+<p align="center">
+  Draw in the air using your hand gestures and webcam.
+</p>
+
 # 🎨 Gesture-Canvas — Air Drawing
 
-<p align="center">
-  <img src="assets/banner.png" alt="Gesture-Canvas Banner" width="100%">
-</p>
-
-<p align="center">
-  <b>Draw in the air. Create with your hands. No mouse required.</b>
-</p>
-
-<p align="center">
-  A browser-based interactive drawing application that uses hand gestures and webcam-based hand tracking to let users draw in the air.
-</p>
 
 ---
 
