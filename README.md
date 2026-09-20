@@ -1,11 +1,6 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Gesture-Canvas Banner">
-</p>
-
-<h1 align="center">Gesture-Canvas</h1>
 
 <p align="center">
-  Draw in the air using your hand gestures and webcam.
+  <img src=""Gesture-Canvas/"Gesture-Canvas-banner.png" alt="Gesture-Canvas Banner" width="100%">
 </p>
 
 # 🎨 Gesture-Canvas — Air Drawing
