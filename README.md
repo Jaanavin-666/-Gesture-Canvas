@@ -82,7 +82,8 @@ The application follows this basic process:
            │
            ▼
       Canvas Drawing
-🎨 4. Multiple Colors
+
+## 🎨 4. Multiple Colors
 
 Users can select different colors for their artwork.
 
@@ -103,7 +104,7 @@ Example colors:
 
 The selected color is applied to new drawing strokes.
 
-🎨 UI/UX Design
+##🎨 UI/UX Design
 
 The user interface was designed to look more like a modern creative application rather than a basic HTML project.
 
