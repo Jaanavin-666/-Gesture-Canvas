@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src=""Gesture-Canvas/"Gesture-Canvas-banner.png" alt="Gesture-Canvas Banner" width="100%">
+  <img src="Gesture-Canvas-banner.png" alt="Gesture-Canvas Banner" width="100%">
 </p>
 
 # 🎨 Gesture-Canvas — Air Drawing
