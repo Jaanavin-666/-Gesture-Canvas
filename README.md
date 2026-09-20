@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="assets/banner.png" alt="Gesture-Canvas Banner">
 </p>
@@ -10,7 +9,6 @@
 </p>
 
 # 🎨 Gesture-Canvas — Air Drawing
-
 
 ---
 
@@ -89,3 +87,102 @@ The application follows this basic process:
            │
            ▼
       Canvas Drawing
+🎨 4. Multiple Colors
+
+Users can select different colors for their artwork.
+
+Example colors:
+
+🔴 Red
+🟠 Orange
+🟡 Yellow
+🟢 Green
+🔵 Blue
+🟣 Purple
+⚫ Black
+⚪ White
+🩷 Pink
+🩵 Cyan
+🟤 Brown
+🩶 Gray
+
+The selected color is applied to new drawing strokes.
+
+🎨 UI/UX Design
+
+The user interface was designed to look more like a modern creative application rather than a basic HTML project.
+
+The design focuses on:
+
+✨ Visual Hierarchy
+
+Important controls are clearly separated from secondary controls.
+
+🎨 Color Feedback
+
+Selected tools and colors provide visual feedback.
+
+🧭 Easy Navigation
+
+The control panel keeps important options accessible.
+
+🟢 Selection Feedback
+
+When an option is selected, the interface provides a visual indication.
+
+📱 Responsive Layout
+
+The interface is designed to adapt to different screen sizes.
+
+
+📄 index.html
+
+The HTML file provides the main structure of the application.
+
+It contains:
+
+Main application container
+Drawing canvas
+Hand tracking canvas
+Controls
+Color options
+Drawing tools
+Eraser
+Undo
+Clear
+Save
+Camera controls
+Status indicators
+🎨 style.css
+
+The CSS file controls the visual appearance of the application.
+
+It manages:
+
+Layout
+Colors
+Buttons
+Panels
+Typography
+Spacing
+Borders
+Shadows
+Animations
+Responsive behaviour
+⚙️ script.js
+
+JavaScript controls the complete application logic.
+
+It manages:
+
+Canvas drawing
+Hand tracking
+Finger coordinates
+Color selection
+Brush size
+Eraser
+Undo
+Clear
+Save
+Gesture interaction
+Camera communication
