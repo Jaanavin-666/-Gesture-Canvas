@@ -1,184 +1,150 @@
-
 <p align="center">
   <img src="Gesture-Canvas-banner.png" alt="Gesture-Canvas Banner" width="100%">
 </p>
 
-# 🎨 Gesture-Canvas — Air Drawing
+<h1 align="center">🎨 Gesture-Canvas — Air Drawing</h1>
+
+<p align="center">
+  <b>Draw • Create • Express</b>
+</p>
+
+<p align="center">
+  A web-based air drawing application that allows users to draw digitally using hand gestures and a webcam.
+</p>
 
 ---
 
-## ✨ About The Project
+## 👨‍💻 About Me
+
+Hi! I'm **John Navin N.**, an engineering student and beginner developer interested in building creative and interactive applications.
+
+I have basic knowledge of:
+
+- Python
+- C
+- C++
+- Java
+- HTML
+- CSS
+- JavaScript
+- Frontend & Backend Development
+- Artificial Intelligence
+
+I enjoy creating small projects, experimenting with new technologies, and learning by building real-world applications.
+
+This project is one of my projects created to explore **web development, computer vision, hand tracking, and interactive user interfaces**.
+
+---
+
+# 📌 About The Project
 
 **Gesture-Canvas** is an interactive air-drawing web application built using **HTML, CSS, and JavaScript**.
 
-Instead of using a traditional mouse or drawing tool, the application uses a webcam to detect the user's hand and track the **index finger**.
+Instead of using a traditional mouse or drawing tablet, the application uses a webcam to detect the user's hand and track the **index finger**.
 
-The movement of the index finger is converted into a drawing path on the digital canvas.
+The movement of the index finger is converted into a drawing path on a digital canvas.
 
-The main idea behind this project is to explore how **computer vision + hand tracking + web technologies** can be combined to create a fun and interactive user experience.
+The main goal of this project is to combine:
+
+- 🖐️ Hand Gesture Recognition
+- 🎥 Webcam Input
+- 🎨 Digital Drawing
+- 🌐 Web Technologies
+- ⚡ Real-Time Interaction
+
+The project demonstrates how computer vision and web technologies can be combined to create a fun and interactive user experience.
 
 ---
 
-## 🚀 Features
+# ✨ Features
 
-### 🖐️ Hand Gesture Drawing
-Draw on the canvas by moving your index finger in front of the webcam.
+## 🖐️ Hand Gesture Drawing
 
-### 🎥 Real-Time Hand Tracking
+Draw on the digital canvas by moving your index finger in front of the webcam.
+
+## 🎥 Real-Time Hand Tracking
+
 The application detects and tracks the user's hand using webcam input.
 
-### ✏️ Air Drawing
+## ✏️ Air Drawing
+
 No physical mouse or drawing tablet is required.
 
-Simply move your finger in the air and create your drawing digitally.
+Simply move your finger in the air and create your artwork digitally.
 
-### 🎨 Multiple Colors
+## 🎨 Multiple Colors
+
 Choose different colors for your drawing.
 
-### 🧽 Eraser
-Switch to eraser mode and remove parts of your drawing.
+Available colors include:
 
-### ↩️ Undo
-Undo your previous drawing actions.
+- 🔴 Red
+- 🟠 Orange
+- 🟡 Yellow
+- 🟢 Green
+- 🔵 Blue
+- 🟣 Purple
+- ⚫ Black
+- ⚪ White
+- 🩷 Pink
+- 🩵 Cyan
+- 🟤 Brown
+- 🩶 Gray
 
-### 🗑️ Clear Canvas
+## 🧽 Eraser
+
+Use the eraser tool to remove parts of your drawing.
+
+## ↩️ Undo
+
+Undo previous drawing actions.
+
+## 🗑️ Clear Canvas
+
 Clear the entire canvas and start a new drawing.
 
-### 💾 Save Drawing
+## 💾 Save Drawing
+
 Save your artwork as a PNG image.
 
-### 🎯 Gesture-Based Controls
-Move your finger over controls and hold it for a short time to activate them.
+## 🎯 Gesture-Based Controls
 
-### ⚡ Smooth Finger Tracking
-The project uses position smoothing to make the drawing movement more natural and reduce sudden jumps.
+Interact with application controls using hand movements.
 
-### 📱 Responsive Interface
-The interface is designed to work across different screen sizes.
+## ⚡ Smooth Finger Tracking
 
----
+Position smoothing helps reduce sudden movements and creates a more natural drawing experience.
 
-## 🧠 How It Works
-
-The application follows this basic process:
-
-```text
-        Webcam
-           │
-           ▼
-    Hand Detection
-           │
-           ▼
-   Hand Landmarks
-           │
-           ▼
-   Index Finger Tip
-           │
-           ▼
- Coordinate Conversion
-           │
-           ▼
-   Smooth Position
-           │
-           ▼
-      Canvas Drawing
-
-## 🎨 4. Multiple Colors
-
-Users can select different colors for their artwork.
-
-Example colors:
-
-🔴 Red
-🟠 Orange
-🟡 Yellow
-🟢 Green
-🔵 Blue
-🟣 Purple
-⚫ Black
-⚪ White
-🩷 Pink
-🩵 Cyan
-🟤 Brown
-🩶 Gray
-
-The selected color is applied to new drawing strokes.
-
-##🎨 UI/UX Design
-
-The user interface was designed to look more like a modern creative application rather than a basic HTML project.
-
-The design focuses on:
-
-✨ Visual Hierarchy
-
-Important controls are clearly separated from secondary controls.
-
-🎨 Color Feedback
-
-Selected tools and colors provide visual feedback.
-
-🧭 Easy Navigation
-
-The control panel keeps important options accessible.
-
-🟢 Selection Feedback
-
-When an option is selected, the interface provides a visual indication.
-
-📱 Responsive Layout
+## 📱 Responsive Interface
 
 The interface is designed to adapt to different screen sizes.
 
+---
 
-📄 index.html
+# 🧠 How It Works
 
-The HTML file provides the main structure of the application.
+The application follows this process:
 
-It contains:
-
-Main application container
-Drawing canvas
-Hand tracking canvas
-Controls
-Color options
-Drawing tools
-Eraser
-Undo
-Clear
-Save
-Camera controls
-Status indicators
-🎨 style.css
-
-The CSS file controls the visual appearance of the application.
-
-It manages:
-
-Layout
-Colors
-Buttons
-Panels
-Typography
-Spacing
-Borders
-Shadows
-Animations
-Responsive behaviour
-⚙️ script.js
-
-JavaScript controls the complete application logic.
-
-It manages:
-
-Canvas drawing
-Hand tracking
-Finger coordinates
-Color selection
-Brush size
-Eraser
-Undo
-Clear
-Save
-Gesture interaction
-Camera communication
+```text
+             Webcam
+                │
+                ▼
+        Hand Detection
+                │
+                ▼
+        Hand Landmarks
+                │
+                ▼
+       Index Finger Tip
+                │
+                ▼
+      Coordinate Conversion
+                │
+                ▼
+        Position Smoothing
+                │
+                ▼
+          Canvas Drawing
+                │
+                ▼
+          Digital Artwork
