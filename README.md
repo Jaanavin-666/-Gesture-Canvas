@@ -14,27 +14,6 @@
 
 ---
 
-## 👨‍💻 About Me
-
-Hi! I'm **John Navin N.**, an engineering student and beginner developer interested in building creative and interactive applications.
-
-I have basic knowledge of:
-
-- Python
-- C
-- C++
-- Java
-- HTML
-- CSS
-- JavaScript
-- Frontend & Backend Development
-- Artificial Intelligence
-
-I enjoy creating small projects, experimenting with new technologies, and learning by building real-world applications.
-
-This project is one of my projects created to explore **web development, computer vision, hand tracking, and interactive user interfaces**.
-
----
 
 # 📌 About The Project
 
@@ -121,30 +100,59 @@ The interface is designed to adapt to different screen sizes.
 
 ---
 
-# 🧠 How It Works
+🔮 Future Enhancements
 
-The application follows this process:
+Possible future improvements include:
 
-```text
-             Webcam
-                │
-                ▼
-        Hand Detection
-                │
-                ▼
-        Hand Landmarks
-                │
-                ▼
-       Index Finger Tip
-                │
-                ▼
-      Coordinate Conversion
-                │
-                ▼
-        Position Smoothing
-                │
-                ▼
-          Canvas Drawing
-                │
-                ▼
-          Digital Artwork
+👥 Multi-hand drawing
+✋ More gesture controls
+🎨 Custom brush styles
+📏 Adjustable brush size
+🌈 Gradient drawing
+🖼️ Image import
+🔤 Gesture-based text
+🎬 Drawing animation recording
+📱 Improved mobile support
+🤖 Advanced AI-based gesture recognition
+
+📸 Project Preview
+
+The project provides an interactive workspace where users can see their webcam hand tracking and create drawings digitally.
+
+
+## 👨‍💻 About Me
+
+Hi! I'm **John Navin N.**, an engineering student and beginner developer interested in building creative and interactive applications.
+
+I have basic knowledge of:
+
+- Python
+- C
+- C++
+- Java
+- HTML
+- CSS
+- JavaScript
+- Frontend & Backend Development
+- Artificial Intelligence
+
+I enjoy creating small projects, experimenting with new technologies, and learning by building real-world applications.
+
+This project is one of my projects created to explore **web development, computer vision, hand tracking, and interactive user interfaces**.
+
+---
+
+
+👨‍💻 Author
+
+Jaanavin.N
+
+Engineering Student | Beginner Developer
+
+Interested in:
+
+Web Development
+Programming
+Artificial Intelligence
+Creative Projects
+Interactive Applications
