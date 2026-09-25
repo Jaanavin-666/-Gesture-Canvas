@@ -1,9 +1,9 @@
-<h1 align="center">🎨 Gesture-Canvas — Air Drawing</h1>
+<h1 align="center">
 <p align="center">
   <img src="Gesture-Canvas-banner.png" alt="Gesture-Canvas Banner" width="100%">
 </p>
 
-
+🎨 Gesture-Canvas — Air Drawing</h1>
 <p align="center">
   <b>Draw • Create • Express</b>
 </p>
